@@ -15,6 +15,8 @@ document.getElementById("year").textContent =
 currentYear + " " + "Vijay. All rights reserved";
 
 
+// data-aos="fade-down-right"
+// data-aos="fade-up-left"
 
 // scroll nav bar bg-color change
 const navBar = document.querySelector("nav");
