@@ -19,6 +19,8 @@
 
     <!-- ------------ style.css ------------ -->
     <link rel="stylesheet" href="style.css" />
+      <!-- scroll animation -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body
     class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white"
@@ -31,7 +33,7 @@
 </div>
 
     <nav
-      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
+      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50" data-aos="fade-left"
     >
       <!-- <img
         src="./images/logo.png"
@@ -590,6 +592,13 @@
     </footer>
     <!-- ------------ script.js ------------ -->
     <script src="script.js"></script>
+
+  <!-- scroll animation -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 
     <!-- --------------------- sweet alert ------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
