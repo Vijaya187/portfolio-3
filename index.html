@@ -53,7 +53,7 @@
         <li><a href="#Work">My Work</a></li>
         <li><a href="#Contact">Contact Me</a></li>
       </ul>
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-4" data-aos="fade-down-right">
         <button onclick="toggleTheme()">
           <img src="./images/moon_icon.png" class="w-6 dark:hidden" />
           <img src="./images/sun_icon.png" class="w-6 hidden dark:block" />
@@ -82,7 +82,7 @@
       <!-- ------------ mobile menu bar------------ -->
 
       <ul
-        id="sideMenu"
+        id="sideMenu" data-aos="fade-down-right"
         class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white"
       >
         <div class="absolute right-6 top-6" onclick="closeMenu()">
@@ -129,7 +129,7 @@
 
       <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a
-          href="contact"
+          href="#contact"
           class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent"
           >Contact me <img src="./images/right-arrow-white.png" class="w-4"
         /></a>
