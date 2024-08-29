@@ -121,16 +121,55 @@ document.getElementById("myForm").addEventListener('submit', function(e){
 
  //
 
- document.addEventListener("DOMContentLoaded", function () {
-   const navLinks = document.querySelectorAll(".nav-link");
+//  document.addEventListener("DOMContentLoaded", function () {
+//    const navLinks = document.querySelectorAll(".nav-link");
 
-   // Function to handle adding/removing 'active' class
-   function setActiveLink(event) {
-     navLinks.forEach((link) => link.classList.remove("active"));
-     this.classList.add("active");
-   }
+//    // Function to handle adding/removing 'active' class
+//    function setActiveLink(event) {
+//      navLinks.forEach((link) => link.classList.remove("active"));
+//      this.classList.add("active");
+//    }
 
-   navLinks.forEach((link) => {
-     link.addEventListener("click", setActiveLink);
-   });
- });
+//    navLinks.forEach((link) => {
+//      link.addEventListener("click", setActiveLink);
+//    });
+//  });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-link");
+  const sections = document.querySelectorAll("section");
+
+  // Function to set the active link
+  function setActiveLink(link) {
+    navLinks.forEach((navLink) => navLink.classList.remove("active"));
+    link.classList.add("active");
+  }
+
+  // Intersection Observer callback
+  function onSectionIntersection(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const activeLink = document.querySelector(
+          `a[href="#${entry.target.id}"]`
+        ).parentElement;
+        setActiveLink(activeLink);
+      }
+    });
+  }
+
+  // Setting up Intersection Observer
+  const observer = new IntersectionObserver(onSectionIntersection, {
+    threshold: 0.6, // Adjust this value based on when you want the active link to change
+  });
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+
+  // Handle click event to set active class manually when link is clicked
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      setActiveLink(this);
+    });
+  });
+});
