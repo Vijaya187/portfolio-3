@@ -116,3 +116,21 @@ document.getElementById("myForm").addEventListener('submit', function(e){
    backSpeed: 40,
    loop: true,
  });
+
+
+
+ //
+
+ document.addEventListener("DOMContentLoaded", function () {
+   const navLinks = document.querySelectorAll(".nav-link");
+
+   // Function to handle adding/removing 'active' class
+   function setActiveLink(event) {
+     navLinks.forEach((link) => link.classList.remove("active"));
+     this.classList.add("active");
+   }
+
+   navLinks.forEach((link) => {
+     link.addEventListener("click", setActiveLink);
+   });
+ });
