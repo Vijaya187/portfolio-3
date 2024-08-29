@@ -80,7 +80,6 @@ function toggleTheme() {
   }
 }
 
-
 // Form submit alert message and reset input
 
 document.getElementById("myForm").addEventListener('submit', function(e){
@@ -106,8 +105,6 @@ document.getElementById("myForm").addEventListener('submit', function(e){
   this.reset();
 });
 
-
-
 // typing text
 
  var typing = new Typed(".text", {
@@ -117,23 +114,7 @@ document.getElementById("myForm").addEventListener('submit', function(e){
    loop: true,
  });
 
-
-
- //
-
-//  document.addEventListener("DOMContentLoaded", function () {
-//    const navLinks = document.querySelectorAll(".nav-link");
-
-//    // Function to handle adding/removing 'active' class
-//    function setActiveLink(event) {
-//      navLinks.forEach((link) => link.classList.remove("active"));
-//      this.classList.add("active");
-//    }
-
-//    navLinks.forEach((link) => {
-//      link.addEventListener("click", setActiveLink);
-//    });
-//  });
+// nav active link 
 
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
