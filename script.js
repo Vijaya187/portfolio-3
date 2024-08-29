@@ -105,3 +105,14 @@ document.getElementById("myForm").addEventListener('submit', function(e){
 
   this.reset();
 });
+
+
+
+// typing text
+
+ var typing = new Typed(".text", {
+   strings: ["", "Frontend Developer", "React JS Developer", "Fresher"],
+   typeSpeed: 100,
+   backSpeed: 40,
+   loop: true,
+ });

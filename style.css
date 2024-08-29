@@ -68,3 +68,25 @@
     border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
   }
 }
+
+/* Typing text */
+.typing-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iam{
+  color: white;
+    font-size: 55px;
+    padding: 15px;
+    font-family: sans-serif;
+}
+.text{
+  color: white;
+    border-right: 2px solid red;
+    font-size: 55px;
+    font-family: sans-serif;
+    color: rgb(255, 30, 0);
+}
