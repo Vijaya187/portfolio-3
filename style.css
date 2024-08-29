@@ -17,7 +17,7 @@
         text-shadow: 0px 0px 20px #b3b3b8, 0px 0px 20px #e3e1ef;
     }
 } */
- .img-style {
+ .img-border-style {
   display: flex;
   align-content: center;
   align-items: center;
@@ -32,7 +32,7 @@
           animation: morphing 10s infinite;
   overflow: hidden;
 }
-.img-style:hover {
+.img-border-style:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
