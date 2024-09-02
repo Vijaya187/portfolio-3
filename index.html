@@ -21,14 +21,16 @@
 
     <!-- ------------ style.css ------------ -->
     <link rel="stylesheet" href="style.css" />
-   <!-- ------------ Typing text libray ------------ -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
-
+    <!-- ------------ Typing text libray ------------ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+      integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body
     class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white"
   >
-
     <!-- ------------ nav bar style ------------ -->
     <div
       class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden"
@@ -102,11 +104,21 @@
           />
         </div>
 
-        <li class="link-hover nav-link active"><a href="#Home" onclick="closeMenu()">Home</a></li>
-        <li class="link-hover nav-link"><a href="#About" onclick="closeMenu()">About Me</a></li>
-        <li class="link-hover nav-link"><a href="#Services" onclick="closeMenu()">Services</a></li>
-        <li class="link-hover nav-link"><a href="#Work" onclick="closeMenu()">My Work</a></li>
-        <li class="link-hover nav-link"><a href="#Contact" onclick="closeMenu()">Contact Me</a></li>
+        <li class="link-hover nav-link active">
+          <a href="#Home" onclick="closeMenu()">Home</a>
+        </li>
+        <li class="link-hover nav-link">
+          <a href="#About" onclick="closeMenu()">About Me</a>
+        </li>
+        <li class="link-hover nav-link">
+          <a href="#Services" onclick="closeMenu()">Services</a>
+        </li>
+        <li class="link-hover nav-link">
+          <a href="#Work" onclick="closeMenu()">My Work</a>
+        </li>
+        <li class="link-hover nav-link">
+          <a href="#Contact" onclick="closeMenu()">Contact Me</a>
+        </li>
       </ul>
     </nav>
 
@@ -115,19 +127,28 @@
       id="Home"
       class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
     >
-      <img data-aos="zoom-out-down"
+      <img
+        data-aos="zoom-out-down"
         src="./images/vijay-img.jpeg"
         class="img-border-style mt-10 dark:hidden border-2 border-fuchsia-500"
       />
-      <img data-aos="zoom-out-right" src="./images/vijay-img.png.jpeg" class="img-border-style mt-10 border-2 hidden dark:block hover:shadow-2xl duration-500  dark:border-2 dark:border-lime-500 dark:hover:shadow-[5px_5px_15px_10px_rgba(255,64,255,0.9)] dark:hover:duration-500"alt="">
-      <h3 data-aos="zoom-out-right" class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+      <img
+        data-aos="zoom-out-right"
+        src="./images/vijay-img.png.jpeg"
+        class="img-border-style mt-10 border-2 hidden dark:block hover:shadow-2xl duration-500 dark:border-2 dark:border-lime-500 dark:hover:shadow-[5px_5px_15px_10px_rgba(255,64,255,0.9)] dark:hover:duration-500"
+        alt=""
+      />
+      <h3
+        data-aos="zoom-out-right"
+        class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo"
+      >
         Hi! I'm Vijay <img src="./images/hand-icon.png" class="w-6" />
       </h3>
       <!-- Typing text -->
       <div class="typing-text" data-aos="zoom-in-right">
-      <span class="iam text-black dark:text-white">I'm</span>
-    <span class="text text-3xl sm:text-6xl lg:text-[66px] font-Ovo"></span>
-    </div>
+        <span class="iam text-black dark:text-white">I'm</span>
+        <span class="text text-3xl sm:text-6xl lg:text-[66px] font-Ovo"></span>
+      </div>
 
       <p class="max-w-2xl mx-auto font-Ovo" data-aos="zoom-in-right">
         I am a Frontend web developer from in chennai,I am a fresher in the
@@ -135,7 +156,10 @@
         javascript
       </p>
 
-      <div class="flex flex-col sm:flex-row items-center gap-4 mt-4" data-aos="zoom-in-right">
+      <div
+        class="flex flex-col sm:flex-row items-center gap-4 mt-4"
+        data-aos="zoom-in-right"
+      >
         <a
           href="#contact"
           class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent"
@@ -154,16 +178,24 @@
     <!-- ----------------- About me section------------------ -->
 
     <section id="About" class="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 class="text-center mb-2 text-lg font-Ovo" data-aos="zoom-out-down">Introduction</h4>
-      <h2 class="text-center text-5xl font-Ovo" data-aos="zoom-out-down">About me</h2>
+      <h4 class="text-center mb-2 text-lg font-Ovo" data-aos="zoom-out-down">
+        Introduction
+      </h4>
+      <h2 class="text-center text-5xl font-Ovo" data-aos="zoom-out-down">
+        About me
+      </h2>
 
       <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
         <div class="max-w-max mx-auto relative" data-aos="zoom-in-left">
           <img
             src="./images/vijay-img.jpeg"
-            class="w-64 sm:w-80 rounded-3xl max-w-none border-2 border-black-500 hover:shadow-2xl duration-500 dark:border-none dark:hidden  dark:hover:shadow-[5px_5px_15px_10px_rgba(255,64,255,0.9)] dark:hover:duration-500"
+            class="w-64 sm:w-80 rounded-3xl max-w-none border-2 border-black-500 hover:shadow-2xl duration-500 dark:border-none dark:hidden dark:hover:shadow-[5px_5px_15px_10px_rgba(255,64,255,0.9)] dark:hover:duration-500"
           />
-          <img src="./images/vijay-img.png.jpeg" class="hidden dark:block w-64 sm:w-80 rounded-3xl max-w-none border-2 border-black-500 duration-500 dark:border-none dark:hover:shadow-[5px_5px_15px_10px_rgba(255,64,255,0.9)] dark:hover:duration-500" alt="">
+          <img
+            src="./images/vijay-img.png.jpeg"
+            class="hidden dark:block w-64 sm:w-80 rounded-3xl max-w-none border-2 border-black-500 duration-500 dark:border-none dark:hover:shadow-[5px_5px_15px_10px_rgba(255,64,255,0.9)] dark:hover:duration-500"
+            alt=""
+          />
 
           <div
             class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center"
@@ -190,8 +222,9 @@
             always eager to learn new technologies and improve my skill
             set.let's built something amazing together!.
           </p>
-          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl" >
-            <li data-aos="zoom-in-down"
+          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+            <li
+              data-aos="zoom-in-down"
               class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
             >
               <img src="./images/code-icon.png" class="w-7 mt-3 dark:hidden" />
@@ -205,11 +238,13 @@
               </h3>
 
               <p class="text-gray-600 text-sm dark:text-white/80">
-                HTML, CSS, TailWind, Bootstrab, Javascript, React Js,jQuery, Git, GitHub
+                HTML, CSS, TailWind, Bootstrab, Javascript, React Js,jQuery,
+                Git, GitHub
               </p>
             </li>
 
-            <li data-aos="zoom-out-up"
+            <li
+              data-aos="zoom-out-up"
               class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
             >
               <img src="./images/edu-icon.png" class="w-7 mt-3 dark:hidden" />
@@ -225,7 +260,8 @@
               </p>
             </li>
 
-            <li data-aos="zoom-out-right"
+            <li
+              data-aos="zoom-out-right"
               class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
             >
               <img
@@ -245,7 +281,10 @@
             </li>
           </ul>
 
-          <h4 class="my-6 text-gray-700 font-Ovo dark:text-white" data-aos="zoom-out-right">
+          <h4
+            class="my-6 text-gray-700 font-Ovo dark:text-white"
+            data-aos="zoom-out-right"
+          >
             Tools i use
           </h4>
 
@@ -300,19 +339,20 @@
     </section>
 
     <!-- ----------------- my Services section------------------ -->
-    <section id="Services" class="w-full px-[12%] py-10 scroll-mt-20" >
-      <div  data-aos="zoom-in-down">
-      <h4 class="text-center mb-2 text-lg font-Ovo">What i offer</h4>
-      <h2 class="text-center text-5xl font-Ovo">My Services</h2>
-      <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        I am a Frontend web developer from in chennai,I am a fresher in the
-        professional world,I have developed numerous website using react.js
-        javascript
-      </p>
+    <section id="Services" class="w-full px-[12%] py-10 scroll-mt-20">
+      <div data-aos="zoom-in-down">
+        <h4 class="text-center mb-2 text-lg font-Ovo">What i offer</h4>
+        <h2 class="text-center text-5xl font-Ovo">My Services</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+          I am a Frontend web developer from in chennai,I am a fresher in the
+          professional world,I have developed numerous website using react.js
+          javascript
+        </p>
       </div>
 
       <div class="grid grid-cols-auto gap-6 my-10">
-        <div data-aos="zoom-in"
+        <div
+          data-aos="zoom-in"
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
         >
           <img src="./images/web-icon.png" class="w-10" />
@@ -330,7 +370,8 @@
           </a>
         </div>
 
-        <div data-aos="zoom-in-up"
+        <div
+          data-aos="zoom-in-up"
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
         >
           <img src="./images/mobile-icon.png" class="w-10" />
@@ -348,7 +389,8 @@
           </a>
         </div>
 
-        <div data-aos="zoom-in"
+        <div
+          data-aos="zoom-in"
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
         >
           <img src="./images/ui-icon.png" class="w-10" />
@@ -368,7 +410,8 @@
           </a>
         </div>
 
-        <div data-aos="zoom-in-up"
+        <div
+          data-aos="zoom-in-up"
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
         >
           <img src="./images/graphics-icon.png" class="w-10" />
@@ -391,7 +434,11 @@
     </section>
 
     <!-- ----------------- My work section ------------------ -->
-    <section id="Work" class="w-full px-[12%] py-10 scroll-mt-60" data-aos="zoom-in">
+    <section
+      id="Work"
+      class="w-full px-[12%] py-10 scroll-mt-60"
+      data-aos="zoom-in"
+    >
       <h4 class="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
       <h2 class="text-center text-5xl font-Ovo">My works</h2>
       <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
@@ -400,7 +447,8 @@
       </p>
 
       <div class="grid grid-cols-auto my-10 gap-5">
-        <div  data-aos="zoom-in-left"
+        <div
+          data-aos="zoom-in-left"
           class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
         >
           <div
@@ -418,7 +466,8 @@
           </div>
         </div>
 
-        <div  data-aos="zoom-in-left"
+        <div
+          data-aos="zoom-in-left"
           class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
         >
           <div
@@ -436,7 +485,8 @@
           </div>
         </div>
 
-        <div  data-aos="zoom-in-left"
+        <div
+          data-aos="zoom-in-left"
           class="aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
         >
           <div
@@ -454,7 +504,8 @@
           </div>
         </div>
 
-        <div  data-aos="zoom-in-left"
+        <div
+          data-aos="zoom-in-left"
           class="aspect-square bg-[url('./images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
         >
           <div
@@ -491,7 +542,8 @@
     </section>
 
     <!-- ----------------- Contact section ------------------ -->
-    <section data-aos="zoom-in-down"
+    <section
+      data-aos="zoom-in-down"
       id="Contact"
       class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none"
     >
@@ -501,35 +553,43 @@
         I'd love to hear from you! If you have any questions, comments or
         feedback ,please use the form below.
       </p>
-      <form data-aos="zoom-in-up"
+      <form
+        data-aos="zoom-in-up"
         method="post"
         action="https://api.web3forms.com/submit"
         class="max-w-2xl mx-auto"
         id="myForm"
       >
-        <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
-          <input
-            type="hidden"
-            name="access_key"
-            value="fc453d87-4435-4369-9f25-c91c93e0ad8c"
-          />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 mb-8 input-group">
+  <div class="relative">
+    <input
+      required
+      type="text"
+      name="first_name"
+      autocomplete="off"
+      class="input peer"
+    />
+    <label
+      class="user-label border-gray-400 bg-white dark:bg-darkHover/30 dark:border-white/90"
+      >First Name</label
+    >
+  </div>
 
-          <input
-            type="text"
-            placeholder="Enter Your Name"
-            name="name"
-            required
-            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
-          />
+  <div class="relative">
+    <input
+      required
+      type="text"
+      name="email"
+      autocomplete="off"
+      class="input peer"
+    />
+    <label
+      class="user-label border-gray-400 bg-white dark:bg-darkHover/30 dark:border-white/90"
+      >Enter Email</label
+    >
+  </div>
+</div>
 
-          <input
-            type="email"
-            placeholder="Enter Your Email"
-            name="email"
-            required
-            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
-          />
-        </div>
         <textarea
           rows="6"
           placeholder="Your Message Here"
@@ -549,8 +609,8 @@
     </section>
 
     <!-- ------------ footer section ------------- -->
-     
-    <footer class="mt-20"  data-aos="zoom-in">
+
+    <footer class="mt-20" data-aos="zoom-in">
       <div class="text-center">
         <!-- <img src="./images/logo.png" alt="" class="w-36 mx-auto mb-2"> -->
         <h1 class="font-extrabold text-3xl animate-bounce logo cursor-pointer">
@@ -604,11 +664,11 @@
     <!-- ------------ script.js ------------ -->
     <script src="script.js"></script>
 
-     <!--.... Scroll animation-->
-       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!--.... Scroll animation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- --------------------- sweet alert ------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
